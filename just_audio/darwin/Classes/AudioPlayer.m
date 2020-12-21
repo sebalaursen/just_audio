@@ -832,7 +832,7 @@
             // We should already be at position zero but for
             // ClippingAudioSource it might be off by some milliseconds so we
             // consider anything <= 100 as close enough.
-            if ((int)(1000 * CMTimeGetSeconds(source.position)) > 100) {
+            if ((int)(1000 * CMTimeGetSeconds(source.position)) > 190) {
                 NSLog(@"On currentItem change, seeking back to zero");
                 BOOL shouldResumePlayback = NO;
                 AVPlayerActionAtItemEnd originalEndAction = _player.actionAtItemEnd;
